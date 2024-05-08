@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Задание № 1
+    const num1 = +prompt('Введите первое число');
+    console.log(num1 <= 1 ? 'Число равно или меньше 1' : 'Число не правильно');
+
+    const num2 = +prompt('Введите второе число');
+    console.log(num2 >= 3 ? 'Число равно или больше 3' : 'Число не правильно');
+
+    // Задание № 2
+    let test = true;
+    console.log(test === true ? '+++' : '---');
+
+    // Задание № 3
+    let day = 22;
+    if (day >= 1 && day < 11) {
+      console.log('Первая декада');
+    } else if (day >= 11 && day < 21) {
+      console.log('Вторая декада');
+    } else if (day >= 21 && day < 31) {
+      console.log('Третья декада');
+    } else
+      console.log('Неправильно введено число');
+
+    // Задание № 4
+    const number = +prompt('Введите число:');
+    const hundreds = Math.trunc(number % 1000 / 100);
+    const dozens = Math.trunc(number % 100 / 10);
+    const pieces = Math.trunc(number % 10);
+    alert(`В числе ${number} количесвто сотен: ${hundreds}, десятков: ${dozens}, единиц: ${pieces}`);
+
+  </script>
+</body>
+
+</html>

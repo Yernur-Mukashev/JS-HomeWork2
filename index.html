@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button onclick="alert('Товар добавлен в корзину');">Купить</button>
+  <a onclick="confirm('Закрыть каталог')" href="#">Закрыть диалог</a>
+  <script>
+    // let userAnswer = prompt('Зимой и летом одним цветом');
+
+    // if (userAnswer.toLowerCase() === 'елка') {
+    //   alert('Молодец');
+    // } else {
+    //   alert('Не угадал');
+    // }
+
+    // можно и так сократить
+    // alert((userAnswer === 'елка') ? 'Молодец' : 'Не угадал');
+
+    // let pass = prompt('Введите пароль'); // '123'
+    // pass = Number(pass); // 123
+    // if (pass === 123) {
+    //   alert('Проходим дальше')
+    // } else {
+    //   alert('Нельзя дальше')
+    // }
+
+    let pass = Number(prompt('Введите пароль'));
+    alert((pass === 123) ? 'Проходим дальше' : 'Нельзя дальше');
+
+  </script>
+
+  <script src="./javascript.js"></script>
+</body>
+
+</html>
